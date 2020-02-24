@@ -6,8 +6,6 @@ import os
 # Disable tensorflow warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-print(os.path.isdir(os.path.dirname('./training_1')))
-
 mnist = keras.datasets.mnist
 
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -38,9 +36,10 @@ cp_callback = tf.keras.callbacks.ModelCheckpoint(
     verbose=1
 )
 
-model.load_weights(checkpoint_path)
-
-# model.fit(train_images, train_labels, epochs=10, callbacks=[cp_callback])
+if (os.path.isdir(os.path.dirname('training_1/'))):
+    model.load_weights(checkpoint_path)
+else:
+    model.fit(train_images, train_labels, epochs=10, callbacks=[cp_callback])
 
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 

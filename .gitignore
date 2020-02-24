@@ -2,3 +2,4 @@ venv/
 .vscode/
 __pycache__/
 training_1/
+inputs/
