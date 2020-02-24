@@ -6,6 +6,8 @@ import os
 # Disable tensorflow warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
+print(os.path.isdir(os.path.dirname('./training_1')))
+
 mnist = keras.datasets.mnist
 
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
