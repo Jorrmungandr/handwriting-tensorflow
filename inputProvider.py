@@ -2,6 +2,8 @@ from PIL import Image
 import PIL.ImageOps
 import os
 
+print(os.path.dirname('training_1/'))
+
 size = 28, 28
 
 inputs = []

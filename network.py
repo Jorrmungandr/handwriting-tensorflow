@@ -41,6 +41,8 @@ if (os.path.isdir(os.path.dirname('training_1/'))):
 else:
     model.fit(train_images, train_labels, epochs=10, callbacks=[cp_callback])
 
+tf.saved_model.save(model, '/tmp/handrecog/1')
+
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
 
 print('Test accuracy:', test_acc)
