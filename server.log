@@ -1,18 +1,18 @@
-2020-02-24 01:41:44.544826: I tensorflow_serving/model_servers/server.cc:86] Building single TensorFlow model file config:  model_name: handrecog model_base_path: /tmp/handrecog
-2020-02-24 01:41:44.545060: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
-2020-02-24 01:41:44.545084: I tensorflow_serving/model_servers/server_core.cc:573]  (Re-)adding model: handrecog
-2020-02-24 01:41:44.645899: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: handrecog version: 1}
-2020-02-24 01:41:44.646000: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: handrecog version: 1}
-2020-02-24 01:41:44.646037: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: handrecog version: 1}
-2020-02-24 01:41:44.646090: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /tmp/handrecog/1
-2020-02-24 01:41:44.648100: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
-2020-02-24 01:41:44.648172: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:264] Reading SavedModel debug info (if present) from: /tmp/handrecog/1
-2020-02-24 01:41:44.648385: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2020-02-24 01:41:44.693519: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:203] Restoring SavedModel bundle.
-2020-02-24 01:41:44.709330: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:152] Running initialization op on SavedModel bundle at path: /tmp/handrecog/1
-2020-02-24 01:41:44.712704: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:333] SavedModel load for tags { serve }; Status: success: OK. Took 66607 microseconds.
-2020-02-24 01:41:44.712897: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:105] No warmup data file found at /tmp/handrecog/1/assets.extra/tf_serving_warmup_requests
-2020-02-24 01:41:44.713098: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: handrecog version: 1}
-2020-02-24 01:41:44.716206: I tensorflow_serving/model_servers/server.cc:358] Running gRPC ModelServer at 0.0.0.0:8500 ...
+2020-02-26 14:53:17.751065: I tensorflow_serving/model_servers/server.cc:86] Building single TensorFlow model file config:  model_name: handrecog model_base_path: /tmp/handrecog
+2020-02-26 14:53:17.753938: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
+2020-02-26 14:53:17.754003: I tensorflow_serving/model_servers/server_core.cc:573]  (Re-)adding model: handrecog
+2020-02-26 14:53:17.858116: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: handrecog version: 1}
+2020-02-26 14:53:17.858148: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: handrecog version: 1}
+2020-02-26 14:53:17.858160: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: handrecog version: 1}
+2020-02-26 14:53:17.858179: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /tmp/handrecog/1
+2020-02-26 14:53:17.861122: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2020-02-26 14:53:17.861173: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:264] Reading SavedModel debug info (if present) from: /tmp/handrecog/1
+2020-02-26 14:53:17.862106: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-26 14:53:17.893440: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:203] Restoring SavedModel bundle.
+2020-02-26 14:53:17.972071: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:152] Running initialization op on SavedModel bundle at path: /tmp/handrecog/1
+2020-02-26 14:53:17.977267: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:333] SavedModel load for tags { serve }; Status: success: OK. Took 119076 microseconds.
+2020-02-26 14:53:17.977555: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:105] No warmup data file found at /tmp/handrecog/1/assets.extra/tf_serving_warmup_requests
+2020-02-26 14:53:17.977832: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: handrecog version: 1}
+2020-02-26 14:53:17.983846: I tensorflow_serving/model_servers/server.cc:358] Running gRPC ModelServer at 0.0.0.0:8500 ...
 [evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
-2020-02-24 01:41:44.716891: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
+2020-02-26 14:53:17.987122: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
