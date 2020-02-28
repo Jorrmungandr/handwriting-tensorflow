@@ -12,6 +12,7 @@ mnist = keras.datasets.mnist
 
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
+    keras.layers.Dense(1024, activation='relu'),
     keras.layers.Dense(512, activation='relu'),
     keras.layers.Dense(256, activation='relu'),
     keras.layers.Dense(128, activation='relu'),
@@ -39,7 +40,7 @@ cp_callback = tf.keras.callbacks.ModelCheckpoint(
 if (os.path.isdir(os.path.dirname('training_1/'))):
     model.load_weights(checkpoint_path)
 else:
-    model.fit(train_images, train_labels, epochs=10, callbacks=[cp_callback])
+    model.fit(train_images, train_labels, epochs=20, callbacks=[cp_callback])
 
 tf.saved_model.save(model, '/tmp/handrecog/1')
 

@@ -5,7 +5,6 @@ import PIL.ImageOps
 import requests
 import json
 import base64
-import matplotlib.pyplot as plt
 
 size = 28, 28
 
@@ -63,17 +62,6 @@ class HandRecogMidServer(SimpleHTTPRequestHandler):
         json_response = requests.post('http://localhost:8501/v1/models/handrecog:predict', data=data, headers=headers)
         predictions = json.loads(json_response.text)['predictions']
         highestChance = np.argmax(predictions[0])
-
-
-        plt.figure(figsize=(10, 10))
-        for i in range(len(imgsData)):
-            plt.subplot(2, 5, i + 1)
-            plt.xticks([])
-            plt.yticks([])
-            plt.grid(False)
-            plt.imshow(imgsData[i])
-            plt.xlabel('Predict: {}'.format(np.argmax(predictions[i])))
-        plt.show()
 
         self.res_send('Isso provavelmente é um {}'.format(highestChance))
 
