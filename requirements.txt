@@ -23,7 +23,7 @@ pycodestyle==2.5.0
 pylint==2.4.4
 pyparsing==2.4.6
 python-dateutil==2.8.1
-PyYAML==5.3
+PyYAML==5.4
 six==1.14.0
 tensorboard==1.14.0
 tensorflow==1.14.0
